@@ -24,6 +24,8 @@ YesNoChoices = ['HasChildren', 'Children under 4', 'Children 5to9', 'Children 10
                 'FrequentApp-Games', 'FrequentApp-Productivity', 'FrequentApp-Sports', 'FrequentApp-Weather', 'FrequentApp-Browser', 'FrequentApp-VOIP', 'FrequentApp-None',
                 'FrequentApp-Unknown']
 
+
+
 uniqueChoices = ['Region', 'Employment Status', 'Ethnicity']
 
 valueChoices = ['ValueFlatPanelTelevision', 'ValueDVR', 'ValueStreamingBox', 'ValueThumbDrive', 'ValueBlueRay', 'ValueGamingConsole',
