@@ -43,7 +43,7 @@ df1.fillna(0, inplace=True)
 df2.fillna(0, inplace=True)
 df3.fillna(0, inplace=True)
 
-
+# Gender Charts
 Gender1.replace(['Female', 'Male'], [0, 1], inplace=True)
 Gender2.replace(['Female', 'Male'], [0, 1], inplace=True)
 Gender3.replace(['Female', 'Male'], [0, 1], inplace=True)
