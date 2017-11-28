@@ -24,6 +24,8 @@ YesNoChoices = ['HasChildren', 'Children under 4', 'Children 5to9', 'Children 10
                 'FrequentApp-Games', 'FrequentApp-Productivity', 'FrequentApp-Sports', 'FrequentApp-Weather', 'FrequentApp-Browser', 'FrequentApp-VOIP', 'FrequentApp-None',
                 'FrequentApp-Unknown']
 
+
+
 uniqueChoices = ['Region', 'Employment Status', 'Ethnicity']
 
 valueChoices = ['ValueFlatPanelTelevision', 'ValueDVR', 'ValueStreamingBox', 'ValueThumbDrive', 'ValueBlueRay', 'ValueGamingConsole',
@@ -43,7 +45,7 @@ df1.fillna(0, inplace=True)
 df2.fillna(0, inplace=True)
 df3.fillna(0, inplace=True)
 
-
+# Gender Charts
 Gender1.replace(['Female', 'Male'], [0, 1], inplace=True)
 Gender2.replace(['Female', 'Male'], [0, 1], inplace=True)
 Gender3.replace(['Female', 'Male'], [0, 1], inplace=True)
