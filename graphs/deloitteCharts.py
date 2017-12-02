@@ -5,9 +5,9 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 plt.style.use('seaborn-deep')
 
-df1 = pd.read_excel('./DDS9_Data_Extract_with_labels.xlsx')
-df2 = pd.read_excel('./DDS10_Data_Extract_with_labels.xlsx')
-df3 = pd.read_excel('./DDS11_Data_Extract_with_labels.xlsx')
+df1 = pd.read_excel('../DDS9_Data_Extract_with_labels.xlsx')
+df2 = pd.read_excel('../DDS10_Data_Extract_with_labels.xlsx')
+df3 = pd.read_excel('../DDS11_Data_Extract_with_labels.xlsx')
 
 # will need to change headers in document out for these to work. Each report varies a little in which columns are available too.
 YesNoChoices = ['HasChildren', 'Children under 4', 'Children 5to9', 'Children 10to13', 'Children 14to18', 'Children 19to25', 'Children 26Up', 'Children Unknown',
@@ -57,28 +57,6 @@ plt.title('Gender')
 plt.xticks([0, 1], ['Female', 'Male'])
 plt.show()
 
-
-for item in numericChoices:
-    numItem1 = df1[item]
-    numItem2 = df2[item]
-    numItem3 = df3[item]
-    numData = [numItem1, numItem2, numItem3]
-    plt.hist(numData, bins = 10, histtype='bar')
-    plt.title(item)
-    plt.margins(0.2)
-    plt.subplots_adjust(bottom=0.6)
-    plt.show()
-
-
-for numChoice in numericChoices:
-        numItem1 = df1[numChoice]
-        numItem2 = df2[numChoice]
-        numItem3 = df3[numChoice]
-        numData = [numItem1, numItem2, numItem3]
-        sns.swarmplot(numData)
-
-
-
 for item in uniqueChoices:
     currentItem1 = df1[item]
     currentItem2 = df2[item]
@@ -104,6 +82,18 @@ for item in uniqueChoices:
         plt.margins(0.2)
         plt.subplots_adjust(bottom=0.6)
         plt.show()
+
+
+for item in numericChoices:
+    numItem1 = df1[item]
+    numItem2 = df2[item]
+    numItem3 = df3[item]
+    numData = [numItem1, numItem2, numItem3]
+    plt.hist(numData, bins = 10, histtype='bar')
+    plt.title(item)
+    plt.margins(0.2)
+    plt.subplots_adjust(bottom=0.6)
+    plt.show()
 
 
 for valQ in valueChoices:
